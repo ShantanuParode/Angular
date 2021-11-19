@@ -1,0 +1,29 @@
+<div class='signup-container'>
+    <h1>Sign Up</h1>
+    <div class="signup-options">
+        <div class='options' id='facebook'>
+            <img src="./assets/facebook.png" alt="facebook" class='logo'>
+            <div class='logo-text'>SIGN IN WITH FACEBOOK</div>
+        </div>
+        <div class='options' id="google">
+            <img src="./assets/google.png" alt="google" class='logo'>
+            <div class='logo-text'>SIGN IN WITH GOOGLE</div>
+        </div>
+    </div>
+    <form 
+        [formGroup]="form"
+        >
+        <input type="text" placeholder="First Name" id="fname" required formControlName="fname">
+        <input type="text" placeholder="Last Name" id="lname" required formControlName="lname"><br>
+        <input type="email" placeholder="Email Id" class='input-field' required formControlName="email"><br>
+        <input type="password" placeholder="Enter Password" class='input-field' required formControlName="psw"><br>
+        <input type="password" placeholder="Confirm Password" class='input-field' required formControlName="cPsw">
+        <div id="container-bottom">
+            <div id="terms"><p>By clicking Sign Up, you agree to our <a href="#">Terms</a></p></div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+    <div id="login"><p>Already have an account? <button type="button" (click)="loginBtnClick();">Login</button></p></div>
+    
+
+</div>

@@ -1,0 +1,27 @@
+<h1>Notepad</h1>
+<div class="mainContainer">
+    <div class="input-container">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <input type="text" placeholder="Enter Your Text Here." name="text" ngModel>
+            <div class="iconHolder">
+                <div (click)="bold(f)" [ngClass]="{'icons': true, 'blue': b, 'darkblue' : !b}" name="bold" id='bold'><img src="./assets/notepad icons/bold.png" alt="bold"></div>
+                <div (click)="italic(f)" [ngClass]="{'icons': true, 'blue': i, 'darkblue' : !i}" name="italic" id='italic'><img src="./assets/notepad icons/italic.png" alt="italic"></div>
+                <div (click)='und(f)' [ngClass]="{'icons': true, 'blue': u, 'darkblue' : !u}" name="und" id="und"><img src="./assets/notepad icons/underline.png" alt="underline"></div>
+
+            </div>
+            <button type="submit" id='add'>Add</button>
+
+
+        </form>
+
+    </div>
+
+    <div class="viewText">
+        <h2 id='title'>Notepad :</h2>
+        <p class="text">
+            <span *ngFor="let word of words"><span
+                    style="font-weight: {{word.bold}}; font-style: {{word.italic}}; text-decoration: {{word.und}}">{{word.text}}&nbsp;</span></span>
+        </p>
+    </div>
+    <button id="reset" (click)='emptyView()'>Reset</button>
+</div>

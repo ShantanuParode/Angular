@@ -1,0 +1,110 @@
+.loginWindow {
+    width: 50%;
+    height:400px;
+    margin: 100px auto;
+    border: 2px solid;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.required{
+    color: red;
+}
+.loginWindow h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+form{
+    margin-left: 5%;
+    width:40%;
+    float: left;
+    font-size: 16px;
+    
+}
+svg {
+    float: right;
+}
+.field{
+    padding: 10px 0;
+}
+div.field > input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid grey;
+    background-color: rgb(235, 235, 255);
+    padding-left: 5px;
+}
+.forgot{
+    color: rgb(82, 82, 82);
+    padding-bottom: 10px;
+}
+div#login > input{
+    width: 30%;
+    height: 25px;
+    border: none;
+    border-radius: 1px;
+    background-color: blue;
+    color: white;
+}
+.SignUp{
+    padding-top: 25px;
+
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.login-options{
+    margin-left: 5%;
+
+}
+.options{
+    margin: 30px 10px;
+    padding: 10px 30px;
+    display: flex;
+    width: 80%;
+    font-size: 13px;
+
+}
+.login-options :hover{
+    cursor: pointer;
+}
+.logo{
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+    background-color: white;
+    padding: 5px;
+    
+}
+.logo-text{
+    margin: auto 10px;
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+#facebook{
+    background-color: darkblue;
+}
+#google{
+    background-color: blue;
+}
+#apple{
+    border: 2px solid black;
+}
+#apple-text{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 20px;
+}
+#login :hover{
+    cursor: pointer;
+}
+.forgot:hover{
+    cursor: pointer;
+}

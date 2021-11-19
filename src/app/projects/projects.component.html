@@ -1,0 +1,30 @@
+<div class="project-container">
+    <div class="projects" id='project3'[routerLink]="['/address-envolope']">
+        <div class="project-image"><img src="./assets/address.png" alt="Address form">
+            <img src="./assets/envolope.png" alt="Envolope"></div>
+        <h3 class='project-title'>Generate Address Envolope</h3>
+        <p class='project-desc'>Enter Sender's and Receiver's Address to generate Address Envolope.
+        </p>
+    </div>
+    <div class="projects" id='project2' [routerLink]="['/signup']">
+        <div class="project-image"><img src="./assets/signup form.png" alt="signup form"></div>
+        <h3 class='project-title'>Sign Up Form</h3>
+        <p class='project-desc'>Create a responsive sign up form and add routing to it.
+        </p>
+    </div>
+    <div class="projects" id='project1' [routerLink]="['/login']">
+        <div class="project-image"><img src="./assets/login form.png" alt="login form"></div>
+        <h3 class='project-title'>Login Form</h3>
+        <p class='project-desc'>Create a responsive login form and add routing to it.
+        </p>
+    </div>
+    
+</div>
+<div class="project-container" >
+    <ng-container *ngFor="let projectItem of projectItems"   class="projects" [routerLink]="[projectItem.route]" >
+            <div class="project-image"><img src={{projectItem.thumbnail}} alt="login form"></div>
+            <h3 class='project-title'>{{projectItem.title}}</h3>
+            <p class='project-desc'>{{projectItem.desc}}
+            </p>
+    </ng-container>
+</div>

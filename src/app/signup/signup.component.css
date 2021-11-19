@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+.signup-container{
+    width:600px;
+    margin: 50px auto;
+}
+h1{
+    text-align: center;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    margin: auto 10px ;
+    padding: 3px;
+    background-color: white;
+}
+.options{
+    display: flex;
+    width: 275px;
+    height: 50px;
+    color:white;
+}
+.options:hover{
+    cursor: pointer;
+}
+.logo-text{
+    margin: auto 5px;
+    font-weight: bolder;
+}
+#facebook{
+    background-color: darkblue;
+    float: right;
+}
+#google{
+    background-color: blue;
+}
+input{
+    height: 50px;
+    background-color: rgb(235, 235, 255);
+    padding: 0 10px;
+    border:1px solid rgb(142, 142, 255);
+    font-size: 20px;
+}
+#fname{
+    float: left;
+    width: 265px;
+    margin-top: 25px;
+}
+#lname{
+    float: right;
+    width: 265px;
+    margin-top: 25px;
+}
+.input-field{
+    margin-top: 25px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    
+    color: rgba(0,0,0,0.8);
+}
+#terms{
+    float: left;
+    margin-top: 10px;
+    color: rgba(0,0,0,0.8);
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+    
+}
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    float: right;
+    margin: 15px 0;
+    border: none;
+    padding: 0 30px;
+    display: block;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+#container-bottom{
+    display: block;
+    height: 50px;
+}
+form{
+    height:400px;
+}
+#login{
+    text-align: center;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+button[type="submit"]{
+    float: right;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+button[type="submit"]:hover{
+    background-color: rgb(17, 17, 148);
+}

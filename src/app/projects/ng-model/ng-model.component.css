@@ -1,0 +1,101 @@
+.container{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    display: flex;
+}
+.title{
+    text-align: center;
+}
+.details{
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+}
+input{
+    margin-bottom: 20px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: rgb(245, 245, 255);
+    border: 1px solid rgb(171, 171, 255);
+    color: black;
+}
+.inside-details{
+    width: 45%;
+    float: left;
+
+}
+#lname, #state, #pincode, #email{
+    float: right;
+}
+.address{
+    width: 100%;
+    box-sizing: border-box;
+}
+.buttons{
+    margin: 20px auto;
+    text-align: center;
+}
+#gen, #reset{
+    padding: 10px 20px;
+    color: white;
+    margin: 0 10px;
+}
+#gen, #reset:hover{
+    cursor: pointer;
+}
+#gen{
+    background-color: rgb(32, 32, 102);
+}
+#reset{
+    background-color: rgb(189, 12, 12);
+}
+
+.envolope{
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    box-shadow: 5px 5px 15px grey;
+    display: block;
+}
+.ticket{
+    font-size: 20px;
+    padding: 30px 20px;
+    border: 1px dotted rgb(0, 0, 0);
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+.receiver{
+    width: 40%;
+    height: 300px;
+    margin-left: 100px;
+}
+.r-details{
+    padding-left: 100px; 
+    padding-top: 30px; 
+    margin-bottom: 5px;
+}
+.r-details-output{
+    padding-left: 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.sender{
+    width: 30%;
+    height: 200px;
+    float: right;
+    font-size: 20px;
+    bottom: 0;
+    right: 0;
+}
+.s-details{
+    margin: 10px 0;
+}
+.s-details-output{
+    margin-top: -5px;
+}

@@ -1,0 +1,75 @@
+<h1 class="title">Generate Address Envolope</h1>
+<div id="main">
+    <div class="container">
+
+        <div class="details">
+            <h2 class="title">Sender's Details</h2>
+
+            <input type="text" class="inside-details" id="fname" placeholder="First Name" [(ngModel)]="sFname">
+            <input type="text" class="inside-details" id="lname" placeholder="Last Name" [(ngModel)]="sLname"><br>
+            <input type="text" class="address" placeholder="Address Line 1" [(ngModel)]="sAdd1"><br>
+            <input type="text" class="address" placeholder="Address Line 2" [(ngModel)]="sAdd2"><br>
+            <input type="text" class="inside-details" placeholder="City" [(ngModel)]="sCity">
+            <input type="text" class="inside-details" id="state" placeholder="State" [(ngModel)]="sState"><br>
+            <input type="text" class="inside-details" placeholder="Country" [(ngModel)]="sCountry">
+            <input type="number" class="inside-details" id="pincode" placeholder="Pin Code" [(ngModel)]="sPin"><br>
+            <input type="number" class="inside-details" placeholder="Phone Number" [(ngModel)]="sPhone">
+            <input type="email" class="inside-details" id="email" placeholder="Email Address" [(ngModel)]="sEmail">
+
+        </div>
+
+        <div class="details">
+            <h2 class="title">Receiver's Details</h2>
+
+            <input type="text" class="inside-details" id="fname" placeholder="First Name" [(ngModel)]="rFname">
+            <input type="text" class="inside-details" id="lname" placeholder="Last Name" [(ngModel)]="rLname"><br>
+            <input type="text" class="address" placeholder="Address Line 1" [(ngModel)]="rAdd1"><br>
+            <input type="text" class="address" placeholder="Address Line 2" [(ngModel)]="rAdd2"><br>
+            <input type="text" class="inside-details" placeholder="City" [(ngModel)]="rCity">
+            <input type="text" class="inside-details" id="state" placeholder="State" [(ngModel)]="rState"><br>
+            <input type="text" class="inside-details" placeholder="Country" [(ngModel)]="rCountry">
+            <input type="number" class="inside-details" id="pincode" placeholder="Pin Code" [(ngModel)]="rPin"><br>
+            <input type="number" class="inside-details" placeholder="Phone Number" [(ngModel)]="rPhone">
+            <input type="email" class="inside-details" id="email" placeholder="Email Address" [(ngModel)]="rEmail">
+
+        </div>
+
+    </div>
+    <div class="buttons">
+        <span id="gen" (click)="onGen();">Generate</span><span id="reset" (click)="onReset();">Reset</span>
+    </div>
+
+    <div class="envolope" *ngIf="show">
+        <div>
+            <div>
+                <span class=ticket>Ticket</span><span class=ticket>Ticket</span>
+            </div>
+            <div class="receiver">
+                <h2 class="r-details">To</h2>
+                <p class="r-details-output">
+                    <b>{{rFname  | uppercase}} {{rLname | uppercase}}</b><br>
+                    {{rAdd1}}<br>
+                    {{rAdd2}}<br>
+                    {{rCity}}, {{rState}}<br>
+                    {{rCountry + ' - ' + rPin}}.<br>
+                    {{"Mobile: " + rPhone}}<br>
+                    {{"Email: " + rEmail}}
+                </p>
+            </div>
+            <div class="sender">
+                <h3 class="s-details">From</h3>
+                <p class="s-details-output">
+                    <b>{{sFname | uppercase}} {{sLname  | uppercase}}</b><br>
+                    {{sAdd1}}<br>
+                    {{sAdd2}}<br>
+                    {{sCity}}, {{sState}}<br>
+                    {{sCountry + ' - ' + sPin}}.<br>
+                    Mobile: {{sPhone}}<br>
+                    Email: {{sEmail}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
